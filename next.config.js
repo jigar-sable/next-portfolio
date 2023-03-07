@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['res.cloudinary.com','firebasestorage.googleapis.com', 'jigarsable.netlify.app', 'img.icons8.com', 'raw.githubusercontent.com', 'em-content.zobj.net', 'i.imgur.com']
+    domains: ['res.cloudinary.com', 'firebasestorage.googleapis.com', 'img.icons8.com', 'raw.githubusercontent.com', 'i.imgur.com']
   }
 }
 

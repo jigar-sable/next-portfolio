@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 import Skills from "@/components/skills/Skills";
 import Projects from "@/components/projects/Projects";
 import Socials from "@/components/Socials";
-import Experiences from "@/components/experience/Experiences";
+import Experiences from "@/components/experiences/Experiences";
 import Contact from "@/components/Contact";
 import CallToAction from "@/components/CallToAction";
 import Header from "./Header";

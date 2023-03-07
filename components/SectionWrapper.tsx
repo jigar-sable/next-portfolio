@@ -10,7 +10,7 @@ const sectionVariants = {
 const SectionWrapper = ({ children, id, className }: { children: ReactNode, id: string, className: string }) => {
 
     const [ref, inView] = useInView({
-        threshold: 0.5,
+        threshold: 0.2,
         triggerOnce: true
     });
 

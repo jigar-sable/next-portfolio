@@ -28,8 +28,8 @@ const Experiences = ({ experienceData, educationData }: Props) => {
                 }
             </div>
 
-            <div className="container mx-auto lg:w-3/4">
-                <div className="relative wrap overflow-hidden p-4 md:p-10">
+            <div className="lg:container sm:mx-4 lg:mx-auto lg:w-5/6 2xl:w-3/4">
+                <div className="relative wrap overflow-hidden p-4 md:py-10 md:px-0">
                     <div className="left-6 md:left-1/2 absolute border-opacity-20 border-gray-400 dark:border-grey-800 h-full border"></div>
 
                     {viewAll ?
@@ -48,7 +48,7 @@ const Experiences = ({ experienceData, educationData }: Props) => {
             </div>
 
             {(show === "Experience" ? experiences : educations).length > 2 &&
-                <ViewAll title={viewAll ? 'Okay, I got it' : 'View All'} handleClick={() => setViewAll(!viewAll)} />
+                <ViewAll scrollTo='experience' title={viewAll ? 'Okay, I got it' : 'View All'} handleClick={() => setViewAll(!viewAll)} />
             }
 
         </SectionWrapper>

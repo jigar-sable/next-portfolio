@@ -43,7 +43,7 @@ const Experience = ({ index, company, position, desc, institute, degree, duratio
         <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">{position || degree} | {duration}</p>
         <ul className="text-sm text-gray-400 mt-2 ml-4 list-disc">
           {desc && desc.map((d, i) => (
-            <li key={i}>{d}</li>
+            <li key={i} className='mb-0.5'>{d}</li>
           ))}
         </ul>
       </motion.div>
