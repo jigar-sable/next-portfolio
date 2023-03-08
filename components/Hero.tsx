@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Link as ScrollLink } from 'react-scroll'
 import Typewriter from 'typewriter-effect';
 import { IoIosArrowForward } from 'react-icons/io';
-import wavingHand from '@/public/waving-hand.png';
+import wavingHand from '@/public/waving-hand.gif';
 import { main } from '@/types/main';
 import SectionWrapper from './SectionWrapper';
 
@@ -21,7 +21,7 @@ const Hero = ({ mainData }: HeroProps) => {
 
             <div className="flex flex-col gap-4 md:gap-6 text-left lg:w-1/2 2xl:w-1/3 mx-4 md:mx-6 xl:mx-0 -translate-y-4 lg:translate-y-0">
                 <div className="flex items-center gap-1">
-                    <Image alt='waving-hand' width={30} height={30} src={wavingHand} />
+                    <Image unoptimized={true} alt='waving-hand' width={30} height={30} src={wavingHand} />
                     <p className="text-lg md:text-xl mt-2 md:mt-1.5">
                         Hey
                     </p>
