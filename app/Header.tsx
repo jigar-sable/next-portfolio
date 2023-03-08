@@ -18,11 +18,11 @@ export default function Header({ logo }: { logo: string }) {
             window.scrollY >= 90 ? setScroll(true) : setScroll(false)
         }
         window.addEventListener('scroll', updateScroll)
-    }, [])
-
-    document.documentElement.addEventListener('click', () => {
-        !navCollapse && setNavCollapse(true)
-    })
+        document.documentElement.addEventListener('click', () => {
+            !navCollapse && setNavCollapse(true)
+        })
+    }, [navCollapse])
+  
    
     const navs = ['home', 'about', 'projects', 'experience', 'contact']
 

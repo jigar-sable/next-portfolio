@@ -30,6 +30,7 @@ const Projects = ({ projectsData }: Props) => {
 
     useEffect(() => {
         filterProjects("MERN Stack")
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
