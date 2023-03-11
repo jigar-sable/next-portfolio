@@ -37,7 +37,7 @@ const Projects = ({ projectsData }: Props) => {
         <SectionWrapper id="projects" className="mx-4 md:mx-0 min-h-screen">
             <h2 className="text-4xl text-center">Projects</h2>
 
-            <div className="w-[20.5rem] overflow-x-auto scroll-hide md:w-full max-w-screen-sm mx-auto mt-6 flex justify-between items-center gap-2 md:gap-3 bg-white dark:bg-grey-800 p-2 rounded-md">
+            <div className="overflow-x-auto scroll-hide md:w-full max-w-screen-sm mx-auto mt-6 flex justify-between items-center gap-2 md:gap-3 bg-white dark:bg-grey-800 p-2 rounded-md">
                 {categories.map((c: string = "", i: number) => (
                     <span key={i} onClick={() => filterProjects(c)} className={`p-1.5 md:p-2 w-full text-sm md:text-base text-center capitalize rounded-md ${category.toLowerCase() === c.toLowerCase() ? "bg-violet-600 text-white" : "hover:bg-gray-100 hover:dark:bg-grey-900"} cursor-pointer transition-all`}>
                         {c}

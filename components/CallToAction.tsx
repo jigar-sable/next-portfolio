@@ -14,7 +14,7 @@ const CallToAction = () => {
             <div className="flex flex-col md:w-1/2 lg:w-3/5">
                 <h2 className="text-2xl lg:text-4xl font-extrabold">Loved this <span className="text-yellow-400">portfolio?</span> </h2>
                 <h3 className="md:text-base lg:text-xl font-medium mt-1.5">Make this <span className="text-yellow-400">yours</span> by forking.</h3>
-                <p className="text-sm md:text-base mt-2.5 md:mt-6">Fork this template on Github start building your own portfolio website.</p>
+                <p className="text-sm md:text-base mt-2.5 md:mt-6">Fork this template on GitHub start building your own portfolio website.</p>
                 <div className="flex items-center gap-4 my-4">
                     <Link href="https://github.com/jigar-sable/next-portfolio" target="_blank" className="py-2 px-4 bg-white text-black rounded-lg w-fit flex items-center gap-2 hover:shadow-xl transition-shadow">
                         <FaGithub />
@@ -27,7 +27,7 @@ const CallToAction = () => {
                 </div>
             </div>
             <div className="w-full md:w-1/2 h-40 md:h-52 lg:w-96 mb-4 md:mb-0 mx-auto rounded-lg bg-white dark:bg-grey-900">
-                <Image alt="Fork this template on Github" width={1000} height={1000} className="w-full h-full mt-2 object-cover object-top rounded-lg" src={theme === "dark" ? "/portfolio-fork-dark.png" : "/portfolio-fork.png"} />
+                <Image alt="Fork this template on Github" quality={100} width={1000} height={1000} className="w-full h-full mt-2 object-cover object-top rounded-lg" src={theme === "dark" ? "/portfolio-fork-dark.png" : "/portfolio-fork.png"} />
             </div>
             {/* <div className="absolute -bottom-10 -right-6 h-72 w-96 rounded-lg bg-white"></div> */}
         </SectionWrapper >
