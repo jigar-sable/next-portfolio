@@ -1,6 +1,6 @@
 ![Portfolio](https://res.cloudinary.com/lifecodes/image/upload/v1678684352/Portfolio/l7b1gz61rh3hgoz5qzta.png)
 
-<div align="center" >
+<div align="center">
   &middot;
   <i>Next Portfolio built in Next.js + TypeScript + Tailwind CSS + Firebase</i>
   &middot;
@@ -15,11 +15,11 @@
 </p>
 
 <p align="center">
-  <a href="#introduction">Introduction</a> •
-  <a href="#tech stack">Tech Stack</a> •
-  <a href="#development">Development</a> •
-    <a href="#deployment">Deployment</a> •
-  <a href="#license">License</a>
+  <a href="#introduction-">Introduction</a> •
+  <a href="#tech-stack-%EF%B8%8F">Tech Stack</a> •
+  <a href="#development-">Development</a> •
+    <a href="#deployment-">Deployment</a> •
+  <a href="#license-">License</a>
 </p>
 
 </div>
@@ -54,7 +54,7 @@ Next Portfolio is built using Next.js and Tailwind CSS for a modern design and r
   </a>
   <a href="https://www.framer.com/motion">
     <img src="https://img.shields.io/badge/Framer-0055FF.svg?style=for-the-badge&logo=Framer&logoColor=white" />
-  </a>  
+  </a>
 </p> -->
 
 ## Development 💻
@@ -95,7 +95,7 @@ Here are the steps to run the portfolio locally.
 
 > **Note**: `SENDGRID_API_KEY` - Create an API key from "Settings" -> "API Keys" with "Restricted Access" to only "Mail Send"
 
-5. Update the sample [data.json](https://github.com/jigar-sable/next-portfolio/data.json) provided with your data or directly import the same and edit using firebase later.
+5. Update the sample [data.json](https://github.com/jigar-sable/next-portfolio/data.json) provided, with your data or directly import the same and edit using firebase later.
 
 6. Import json data
 
@@ -132,7 +132,7 @@ Here are the steps to run the portfolio locally.
 
 ## License 📄
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/jigar-sable/next-portfolio/blob/master/LICENSE)
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/jigar-sable/next-portfolio/blob/main/LICENSE)
 
 <!-- ## Contact 📬
 

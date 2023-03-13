@@ -49,22 +49,22 @@ export default function Header({ logo }: { logo: string }) {
                             </ScrollLink>
                         </li>
                     ))}
-                    <div
+                    <span
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                         className='hover:bg-gray-100 hover:dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
                         {theme === 'dark' ? <FiSun /> : <FiMoon />}
-                    </div>
+                    </span>
                 </ul>
             </nav>
 
             <nav className='p-4 flex sm:hidden items-center justify-between'>
                 {logo === 'Jigar Sable' ? <FaNodeJs size={28} /> : <span className='text-lg font-medium'>{logo.split(' ')[0]}</span>}
                 <div className='flex items-center gap-4'>
-                    <div
+                    <span
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                         className='bg-gray-100 dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
                         {theme === 'dark' ? <FiSun /> : <FiMoon />}
-                    </div>
+                    </span>
                     <CgMenuRight size={20} onClick={() => setNavCollapse(false)} />
                 </div>
             </nav>

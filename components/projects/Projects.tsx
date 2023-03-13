@@ -29,7 +29,7 @@ const Projects = ({ projectsData }: Props) => {
     }
 
     useEffect(() => {
-        filterProjects("MERN Stack")
+        filterProjects(categories.includes('MERN Stack') ? "MERN Stack" : categories[0])
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
