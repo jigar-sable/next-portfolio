@@ -80,29 +80,22 @@ Here are the steps to run the portfolio locally.
 5. Create an `.env.local` file in the root directory, and add the following variables with your firebase config:
    ```
    SENDGRID_API_KEY=XXXXXXXX
-   MAIL_TO=YOUR_MAIL_ID
-   MAIL_FROM=YOUR_MAIL_ID
-   NEXT_PUBLIC_FIREBASE_API_KEY=XXXXXXXXXX
-   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=XXXXXXXXXX
    NEXT_PUBLIC_FIREBASE_DATABASE_URL=XXXXXXXXXX
-   NEXT_PUBLIC_FIREBASE_PROJECTID=XXXXXXXXXX
-   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=XXXXXXXXXX
-   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDERID=XXXXXXXXXX
-   NEXT_PUBLIC_FIREBASE_APPID=XXXXXXXXXX
-   NEXT_PUBLIC_FIREBASE_MEASUREMENTD=XXXXXXXXXX
+   MAIL_FROM=YOUR_MAIL_ID
+   MAIL_TO=YOUR_MAIL_ID
    ```
    <!-- write text to tell user to get sendgrid keys from dashboard and add here -->
 
 > **Note**: `SENDGRID_API_KEY` - Create an API key from "Settings" -> "API Keys" with "Restricted Access" to only "Mail Send"
 
-5. Update the sample [data.json](https://github.com/jigar-sable/next-portfolio/data.json) provided, with your data or directly import the same and edit using firebase later.
+1. Update the sample [data.json](https://github.com/jigar-sable/next-portfolio/data.json) provided, with your data or directly import the same and edit using firebase later. (For storing images you can use [Cloudinary](https://cloudinary.com) or [Firebase Storage](https://firebase.google.com/docs/storage))
 
-6. Import json data
+2. Import json data
 
    - Go to [Firebase Console](https://console.firebase.google.com) and select your project
    - Go to "Database" -> "Realtime Database" -> "Import JSON" and import the [data.json](https://github.com/jigar-sable/next-portfolio/data.json) file
 
-7. Run the project
+3. Run the project
 
    ```bash
    npm run dev
@@ -117,16 +110,9 @@ Here are the steps to run the portfolio locally.
 3. Add the following environment variables in the Vercel dashboard:
    ```
    SENDGRID_API_KEY=XXXXXXXX
-   MAIL_TO=YOUR_MAIL_ID
-   MAIL_FROM=YOUR_MAIL_ID
-   NEXT_PUBLIC_FIREBASE_API_KEY=XXXXXXXXXX
-   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=XXXXXXXXXX
    NEXT_PUBLIC_FIREBASE_DATABASE_URL=XXXXXXXXXX
-   NEXT_PUBLIC_FIREBASE_PROJECTID=XXXXXXXXXX
-   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=XXXXXXXXXX
-   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDERID=XXXXXXXXXX
-   NEXT_PUBLIC_FIREBASE_APPID=XXXXXXXXXX
-   NEXT_PUBLIC_FIREBASE_MEASUREMENTD=XXXXXXXXXX
+   MAIL_FROM=YOUR_MAIL_ID
+   MAIL_TO=YOUR_MAIL_ID
    ```
 4. Hurray! You successfully deployed the portfolio🥳
 
