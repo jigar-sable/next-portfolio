@@ -18,12 +18,9 @@ export default function Header({ logo }: { logo: string }) {
             window.scrollY >= 90 ? setScroll(true) : setScroll(false)
         }
         window.addEventListener('scroll', updateScroll)
-        document.documentElement.addEventListener('click', () => {
-            !navCollapse && setNavCollapse(true)
-        })
-    }, [navCollapse])
-  
-   
+    }, [])
+
+
     const navs = ['home', 'about', 'projects', 'experience', 'contact']
 
     return (
@@ -68,34 +65,37 @@ export default function Header({ logo }: { logo: string }) {
                     <CgMenuRight size={20} onClick={() => setNavCollapse(false)} />
                 </div>
             </nav>
-            <div className={
-                !navCollapse ? 'min-h-screen absolute flex flex-col p-4 gap-5 md:hidden top-0 right-0 bottom-0 bg-gray-100/95 backdrop-filter backdrop-blur-sm dark:bg-grey-900/95 z-50 w-3/4 ease-in duration-300' :
-                    'min-h-screen absolute flex flex-col p-4 gap-5 md:hidden top-0 right-[-100%] bottom-0 bg-gray-100/95 backdrop-filter backdrop-blur-sm dark:bg-grey-900/95 z-50 w-3/4 ease-in duration-300'}>
-                <CgClose className='self-end my-2' size={20} onClick={() => setNavCollapse(true)} />
 
-                {navs.slice(0, 4).map((e) => (
+            <div className={`flex min-h-screen w-screen absolute md:hidden top-0 ${!navCollapse ? 'right-0' : 'right-[-100%]'} bottom-0 z-50 ease-in duration-300`}>
+                <div className="w-1/4" onClick={() => setNavCollapse(true)}></div>
+
+                <div className="flex flex-col p-4 gap-5 bg-gray-100/95 backdrop-filter backdrop-blur-sm dark:bg-grey-900/95 w-3/4">
+                    <CgClose className='self-end my-2' size={20} onClick={() => setNavCollapse(true)} />
+
+                    {navs.slice(0, 4).map((e) => (
+                        <ScrollLink
+                            key={e}
+                            className='hover:text-purple-600 py-1.5 px-4 rounded transition-colors capitalize cursor-pointer'
+                            to={e}
+                            offset={-60}
+                            smooth={true}
+                            duration={500}
+                            isDynamic={true}
+                            onClick={() => setNavCollapse(true)}
+                        >
+                            {e}
+                        </ScrollLink>
+                    ))}
                     <ScrollLink
-                        key={e}
-                        className='hover:text-purple-600 py-1.5 px-4 rounded transition-colors capitalize cursor-pointer'
-                        to={e}
+                        to='contact'
                         offset={-60}
                         smooth={true}
                         duration={500}
-                        isDynamic={true}
                         onClick={() => setNavCollapse(true)}
-                    >
-                        {e}
+                        className='px-6 py-1.5 rounded-md bg-violet-600 hover:bg-violet-700 text-white text-center'>
+                        Contact
                     </ScrollLink>
-                ))}
-                <ScrollLink
-                    to='contact'
-                    offset={-60}
-                    smooth={true}
-                    duration={500}
-                    onClick={() => setNavCollapse(true)}
-                    className='px-6 py-1.5 rounded-md bg-violet-600 hover:bg-violet-700 text-white text-center'>
-                    Contact
-                </ScrollLink>
+                </div>
             </div>
 
         </header>
