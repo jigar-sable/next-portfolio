@@ -10,7 +10,7 @@ const CallToAction = () => {
     const { theme } = useTheme();
 
     return (
-        <SectionWrapper id='cta' className="xl:max-w-6xl my-24 lg:mx-10 xl:mx-auto mx-4 relative overflow-hidden flex flex-col-reverse md:flex-row gap-3 md:gap-0 items-center bg-gradient-to-r from-violet-700 to-purple-700 text-white rounded-2xl p-6 md:p-8 lg:px-12 lg:py-16 z-10">
+        <SectionWrapper id='cta' className="xl:max-w-6xl my-24 lg:mx-10 xl:mx-auto mx-4 relative overflow-hidden flex flex-col-reverse md:flex-row gap-3 md:gap-0 items-center bg-gradient-to-r from-red-700 to-purple-700 text-white rounded-2xl p-6 md:p-8 lg:px-12 lg:py-16 z-10">
             <div className="flex flex-col md:w-1/2 lg:w-3/5">
                 <h2 className="text-2xl lg:text-4xl font-extrabold">Loved this <span className="text-yellow-400">portfolio?</span> </h2>
                 <h3 className="md:text-base lg:text-xl font-medium mt-1.5">Make this <span className="text-yellow-400">yours</span> by forking.</h3>
@@ -20,7 +20,7 @@ const CallToAction = () => {
                         <FaGithub />
                         Fork Now
                     </Link>
-                    <Link href="https://github.com/jigar-sable/next-portfolio#readme" target="_blank" className="py-2 px-4 bg-violet-800 rounded-lg w-fit flex items-center gap-2 hover:bg-violet-900 transition-all">
+                    <Link href="https://github.com/jigar-sable/next-portfolio#readme" target="_blank" className="py-2 px-4 bg-red-900 rounded-lg w-fit flex items-center gap-2 hover:bg-red-900 transition-all">
                         Visit Docs
                         <BiLinkExternal />
                     </Link>

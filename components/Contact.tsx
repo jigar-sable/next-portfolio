@@ -68,7 +68,7 @@ const Contact = () => {
                         <input onChange={handleChange} required value={values.name} name="name" type="text" placeholder='Full Name *' className="outline-none bg-gray-100 dark:bg-grey-800 placeholder-gray-400 rounded-lg py-3 px-4" />
                         <input onChange={handleChange} required value={values.email} name="email" type="email" placeholder='Email *' className="outline-none bg-gray-100 dark:bg-grey-800 placeholder-gray-400 rounded-lg py-3 px-4" />
                         <textarea onChange={handleChange} required value={values.message} name="message" rows={4} placeholder='Message *' className="outline-none resize-none bg-gray-100 dark:bg-grey-800 placeholder-gray-400 rounded-lg py-3 px-4" />
-                        <button disabled={loading} className="px-4 py-2 #4B181C hover:bg-violet-700 transition-colors text-white rounded-lg disabled:cursor-not-allowed self-end">
+                        <button disabled={loading} className="px-4 py-2 bg-red-900 hover:bg-red-700 transition-colors text-white rounded-lg disabled:cursor-not-allowed self-end">
                             {loading ? <span className="flex items-center gap-2">Say Hello <BiLoaderAlt className="animate-spin" /></span> : "Say Hello 👋"}
                         </button>
                     </form>

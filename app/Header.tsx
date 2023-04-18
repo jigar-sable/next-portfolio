@@ -27,7 +27,7 @@ export default function Header({ logo }: { logo: string }) {
         <header className={`backdrop-filter backdrop-blur-lg ${scroll ? 'border-b bg-white bg-opacity-40' : 'border-b-0'} dark:bg-grey-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 z-30 min-w-full flex flex-col fixed`}>
             <nav className='lg:w-11/12 2xl:w-4/5 w-full md:px-6 2xl:px-0 mx-auto py-4 hidden sm:flex items-center justify-between'>
 
-                <Link href={'/'} className='2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 transition-colors duration-300'>
+                <Link href={'/'} className='2xl:ml-6 hover:text-red-700 hover:dark:text-red-800 transition-colors duration-300'>
                     {logo === 'Jigar Sable' ? <FaNodeJs size={28} /> : <span className='text-lg font-medium'>{logo?.split(' ')[0]}</span>}
                 </Link>
 
@@ -35,7 +35,7 @@ export default function Header({ logo }: { logo: string }) {
                     {navs.map((e, i) => (
                         <li key={i}>
                             <ScrollLink
-                                className='hover:text-violet-700 hover:dark:text-violet-500 transition-colors capitalize cursor-pointer'
+                                className='hover:text-red-700 hover:dark:text-red-800 transition-colors capitalize cursor-pointer'
                                 to={e}
                                 offset={-60}
                                 smooth={true}
@@ -48,7 +48,7 @@ export default function Header({ logo }: { logo: string }) {
                     ))}
                     <span
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                        className='hover:bg-gray-100 hover:dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
+                        className='hover:bg-gray-100 hover:dark:bg-red-700 p-1.5 rounded-full cursor-pointer transition-colors'>
                         {theme === 'dark' ? <FiSun /> : <FiMoon />}
                     </span>
                 </ul>
@@ -59,7 +59,7 @@ export default function Header({ logo }: { logo: string }) {
                 <div className='flex items-center gap-4'>
                     <span
                         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                        className='bg-gray-100 dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
+                        className='bg-gray-100 dark:bg-red-700 p-1.5 rounded-full cursor-pointer transition-colors'>
                         {theme === 'dark' ? <FiSun /> : <FiMoon />}
                     </span>
                     <CgMenuRight size={20} onClick={() => setNavCollapse(false)} />
@@ -92,7 +92,7 @@ export default function Header({ logo }: { logo: string }) {
                         smooth={true}
                         duration={500}
                         onClick={() => setNavCollapse(true)}
-                        className='px-6 py-1.5 rounded-md bg-violet-600 hover:bg-violet-700 text-white text-center'>
+                        className='px-6 py-1.5 rounded-md bg-red-900 hover:bg-red-700 text-white text-center'>
                         Contact
                     </ScrollLink>
                 </div>
