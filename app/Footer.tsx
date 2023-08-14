@@ -17,7 +17,7 @@ export default function Footer({ socials, name }: { socials: social[], name: str
                 <p className="text-sm mt-2 md:mt-0">Made with
                     <span className="animate-pulse"> ❤️ </span>
                     by
-                    <span className="text-violet-600"> {name}</span></p>
+                    <span className="text-violet-600">{name}</span></p>
 
                 <div className="hidden xl:flex items-center gap-2">
                     <Link href={'https://nextjs.org'} target="_blank">
