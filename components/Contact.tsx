@@ -62,7 +62,7 @@ const Contact = () => {
                 <Image unoptimized={true} quality={100} alt="contact" src="/contact.png" className="hidden md:block w-1/2 h-full object-cover" width={1000} height={1000} />
                 <div className="flex-1">
                     <h3 className="text-2xl">Get in touch</h3>
-                    <p className="text-gray-400 mb-4 text-sm md:text-base">My inbox is always open. Whether you have a question or just want to say hello, I will try my best to get back to you!</p>
+                    <p className="text-gray-400 mb-4 text-sm md:text-base">My inbox is always open! 💌 Whether you've got a burning question or want to drop a friendly "hello," I'm all ears!👂 Let's chat! 🎉</p>
 
                     <form onSubmit={handleSubmit} className="flex flex-col gap-4 rounded-xl">
                         <input onChange={handleChange} required value={values.name} name="name" type="text" placeholder='Full Name *' className="outline-none bg-gray-100 dark:bg-grey-800 placeholder-gray-400 rounded-lg py-3 px-4" />
