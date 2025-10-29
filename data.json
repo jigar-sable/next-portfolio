@@ -25,18 +25,22 @@
   },
   "socials": [
     {
+      "name" : "LinkedIn",
       "icon": "FaLinkedin",
       "link": "https://www.linkedin.com/in/jhon-doe"
     },
     {
+      "name" : "GitHub",
       "icon": "FaGithub",
       "link": "https://github.com/jhon-doe"
     },
     {
+      "name" : "Instagram",
       "icon": "FaInstagram",
       "link": "https://www.instagram.com/jhondoe"
     },
     {
+      "name" : "Twitter",
       "icon": "FaTwitter",
       "link": "https://twitter.com/jhondoe"
     }
@@ -67,7 +71,7 @@
       "links": {
         "code": "",
         "video": "",
-        "visit": ""
+        "visit": "www.google.com"
       }
     },
     {
@@ -97,12 +101,19 @@
     {
       "institute": "XYZ School | CBSE",
       "degree": "HSC Science",
-      "duration": "2014 - 2016"
+      "startDate": "2014-06-01",
+      "endDate": "2016-05-31",
+      "desc": [
+        "Completed Higher Secondary Education with a focus on Science subjects including Physics, Chemistry, Mathematics, and Biology.",
+        "Achieved a percentage of 85% in the final board examinations.",
+        "Participated in various extracurricular activities such as science fairs, debates, and sports events."
+      ]
     },
     {
       "institute": "XYZ College Of Engineering",
       "degree": "B.Tech CSE",
-      "duration": "2016 - 2020",
+      "startDate": "2016-08-01",
+      "endDate": "2020-05-31",
       "desc": [
         "Pursuing IT Engineering course from ABC University",
         "Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL",
@@ -115,6 +126,8 @@
       "company": "ABC Tech Solutions",
       "position": "Web Developer",
       "duration": "2020 -2022",
+      "startDate": "2020-06-01",
+      "endDate": "2022-08-31",
       "desc": [
         "Assisted with design and development of project.",
         "Worked on building the product from scratch and built multiple dashboards.",
@@ -125,6 +138,8 @@
       "company": "XYZ Tech Solutions",
       "position": "Web Developer",
       "duration": "2022 - present",
+      "startDate": "2022-09-01",
+      "endDate": "Present",
       "desc": [
         "Assisted with design and development of project.",
         "Worked on building the product from scratch and built multiple dashboards.",

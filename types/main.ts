@@ -21,6 +21,7 @@ type experience = {
     position: string,
     startDate: string,
     endDate: string,
+    duration: string,
     desc: string[]
 }
 
@@ -29,6 +30,7 @@ type education = {
     degree: string,
     startDate: string,
     endDate: string,
+    desc: string[]
 }
 
 type main = {
